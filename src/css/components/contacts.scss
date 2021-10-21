@@ -1,0 +1,17 @@
+
+
+.footer__contacts {
+    @include phones {
+        margin-bottom: 19px;
+    }
+    
+}
+
+.contacts {
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(18px);
+    line-height: rem(24px);
+    text-align: center;
+}

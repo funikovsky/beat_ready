@@ -1,0 +1,129 @@
+
+
+.player-section__container {
+    width: 80%;
+    height: rem(400px);
+    
+    margin: 0 auto;
+}
+
+.player {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &.active .player__splash {
+        display: none;
+    }
+    &.paused {
+        .player__start {
+            width: rem(14px);
+            height: rem(22px);
+            border: none;
+            background: none;
+
+            &::after,
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: rem(5px);
+                top: 0;
+                bottom: 0;
+                background: red;
+            }
+            &::after {
+                right: 0;
+            }
+            &::before {
+                left: 0;
+            }
+        }
+    }
+}
+
+.player__wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.player__splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/man-player.png") center center/cover no-repeat;
+    &-icon {
+        position: absolute;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(67px);
+        height: rem(98px);
+        background: url("../img/whiteTriangle.png")center center/contain no-repeat;
+    }
+    
+}
+
+
+.player__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   
+    left: 0;
+    height: rem(35px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #151515;
+}
+.player__start {
+    position: relative;
+    width: rem(11px);
+    height: rem(16px);
+    background: url("../img/start.png")center center/contain no-repeat;
+    margin-left: 10px;
+    
+    
+   
+        
+
+}
+.player__playback {
+    height: rem(16px);
+    width: 60%;
+    position: relative;
+    &::before {
+        content: "";
+        height: rem(4px);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        background: blanchedalmond;
+        display: block;
+        transform: translateY(-50%);
+    }
+    @include phones {
+        width: 42%;
+    }
+}
+.player__playback-button {
+    background: brown;
+    border-radius: rem(50px);
+    border: none;
+    width: rem(12px);
+    height: rem(12px);
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+}
+.player__duration {
+    color: white;
+    margin-right: rem(10px);
+}

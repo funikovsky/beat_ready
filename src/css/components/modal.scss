@@ -1,0 +1,15 @@
+.modal {
+    display: none;
+    color:#000;
+    max-width: 309px;
+    &__container {
+        text-align: center;
+    }
+    &__content {
+        margin-bottom: 18px;
+    }
+    &.error-modal {
+        color: rgb(247, 21, 21);
+    }
+}
+

@@ -1,0 +1,48 @@
+.btn {
+  font-weight: bold;
+  padding: 1.125rem 2.56rem;
+  border-radius: 6.25rem;
+  text-transform: uppercase;
+  line-height: 1;
+  border: none;
+  display: inline-block;
+
+  &--theme--red {
+    background: #E01F3D;
+    color: white;
+   
+
+    &:hover {
+      color: #E01F3D;
+      background: white;
+    }
+  }
+  &--theme--darkred {
+    background: #CA1B36;
+    color: white;
+    @include tablets {
+      padding: rem(24px) rem(45px);
+    }
+    &:hover {
+      color: #E01F3D;
+      background: white;
+    }
+  }
+  &--theme--transparent {
+    background: transparent;
+    text-transform: none;
+    color: white;
+    font-weight: normal;
+    line-height: 1.19rem;
+    padding: 1.125rem 0.94rem;
+    @include tablets {
+      color:red
+    }
+    &:hover {
+      color: #E01F3D;
+      background: white;
+    }
+  }
+
+}
+

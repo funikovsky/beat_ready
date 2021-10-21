@@ -1,0 +1,173 @@
+
+.conteiner--accordion {
+    max-width: rem(1100px);
+}
+
+
+.accordion {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    
+    max-height: rem(652px);
+    display: flex;
+    background: url("../img/women.png") center center/cover no-repeat;
+    @include tablets {
+        background: url("../img/womenfull.png") center center/cover no-repeat;
+        max-height: rem(908px);
+    }
+    @include phones {
+        max-height: rem(652px);
+    }
+}
+
+.accordion__text {
+    position: absolute;
+    top: rem(115px);
+    left: rem(84px);
+    z-index: 0;
+
+    font-weight: bold;
+    font-size: rem(48px);
+    color: #ffffff;
+    text-transform: uppercase;
+    overflow: hidden;
+    @include tablets {
+        left: rem(40px);
+        top: rem(91px);
+
+    }
+    @include phones {
+        left: rem(10px);
+        top: rem(76px);
+    }
+    
+    
+
+
+}
+
+.accordion__static-item {
+    flex: 1;
+    font-weight: bold;
+    font-size: rem(48px);
+    line-height: rem(52px);
+    text-transform: uppercase;
+    color: #ffffff;
+    
+
+}
+
+
+.accordion__items {
+    display: flex;
+    
+   
+
+}
+
+.accordion__item {
+    display: flex;
+    z-index: 1;
+    @include phones {
+
+        &.active {
+            z-index: 10;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            & .accordion__item--desc {
+                overflow: visible;
+                
+              
+                
+                
+            }
+        }
+
+    }
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+.accordion__item-title {
+    
+
+    position: relative;
+    width: rem(102px);
+    
+    height: 100%;
+    &--bg--grey {
+        background-color: #999999;
+
+    }
+    &--bg--black {
+        background-color: #151515;;
+
+    }
+    &--bg--red {
+        background-color: #E01F3C;
+
+    }
+    
+   
+    
+    
+}
+
+
+.accordion__item-title-text {
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: absolute;
+    white-space: nowrap;
+    bottom: 0;
+    left: 22%;
+    font-weight: bold;
+    font-size: rem(36px);
+    color: #ffffff;
+    font-family: Alegreya Sans;
+
+}
+.accordion__item--desc {
+    width: 0;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.7s ease;
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+}
+
+
+
+.accordion__item--desc--content {
+    display: flex;
+    max-width: rem(524px);
+    background: rgba(51, 53, 55, 0.9);
+    height: 100%;
+    z-index: 3;
+    padding: rem(38px);
+    color: #ffffff;
+    
+    
+   
+}

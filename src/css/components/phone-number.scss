@@ -1,0 +1,40 @@
+
+
+.footer__phone-number {
+    @include phones{
+        justify-content: center;
+    }
+    
+}
+
+.phone-number__svg {
+
+    width: 12px;
+    height: 12px;
+    display:inline-flex;
+    vertical-align:top;
+    justify-content:center;
+    align-items:center;
+    margin-right: 7px;
+}
+.phone-number__svg-symbol {
+   width: 100%;
+   height: 100%;
+   @include tablets {
+       fill: #E01F3D;
+    }
+   @include phones {
+    fill: #000;
+    }
+}
+.phone-number__text--footer {
+   
+    font-size: rem(18px);
+    @include tablets {
+        color: #E01F3D;
+    }
+    @include phones {
+        color: #000;
+    }
+    
+}

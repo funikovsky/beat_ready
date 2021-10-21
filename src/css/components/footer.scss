@@ -1,0 +1,23 @@
+
+
+.footer {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 100%;
+    min-height: rem(86px);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phones {
+        flex-direction: column;
+
+    }
+    
+}

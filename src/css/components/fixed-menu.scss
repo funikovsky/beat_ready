@@ -1,0 +1,54 @@
+.fixed-menu {
+  position: fixed;
+  top:50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: $z-fixed-menu;
+  &.fixed-menu--shadowed .fixed-menu__item .fixed-menu__link {
+    &::before {
+      background: white;
+    }
+
+  }
+  @include tablets {
+    display: none;
+  }
+  
+}
+
+.fixed-menu__item {
+  
+  margin-bottom: 0.44rem;
+  &--active {
+    .fixed-menu__link {
+      border: 0.06rem solid #E01F3D;
+      &::before {
+       background: #E01F3D ; 
+      }
+    }
+  }
+  
+
+}
+.fixed-menu__link {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 0.06rem solid transparent;
+  display: block;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    background: #292929;
+    opacity: 0.6;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}

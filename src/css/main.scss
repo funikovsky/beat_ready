@@ -1,0 +1,36 @@
+
+
+$conteinerWidht: 940px;
+$baseFontSixe: 16px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+
+//z-index
+$z-fixed-menu: 100;
+$z-fullscreen-menu: 200;
+$z-humburger-menu: 50;
+
+
+
+
+
+
+//normalize
+@import "./media.scss";
+
+
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+
+
+//components
+@import "./components/*.scss";
+
+
+

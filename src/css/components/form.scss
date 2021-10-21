@@ -1,0 +1,105 @@
+.form {
+  display: flex;
+  color: white;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 18%;
+  }
+  @include phones {
+    padding: 0;
+  }
+}
+.form__col {
+  flex: 1;
+  margin-right: 1.69rem;
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+ 
+}
+.form__col .form__controls--last {
+
+  @include tablets {
+    margin-bottom: rem(40px);
+  }
+}
+
+
+
+.form__row {
+  display: flex;
+  margin-bottom: 2.25rem;
+  @include tablets {
+    margin-bottom: rem(14px);
+  
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__row--textarea {
+  @include tablets {
+    margin-bottom: 20px;
+  }
+}
+.form__block {
+  flex: 1;
+  margin-right: 1.06rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.form__input {
+  width: 100%;
+  padding: rem(20px) 0.75rem;
+  border: 0.19rem solid transparent;
+  border-radius: rem(4px);
+  @include tablets {
+    padding: rem(2px) rem(6px);
+    height: rem(36px);
+  }
+  &:focus {
+    border: 0.19rem solid #E01F3D;
+    outline: none;
+  }
+  &--textarea {
+    height: 9.5rem;
+    resize: none;
+    @include tablets {
+      height: rem(86px);
+    }
+  }
+}
+.form__title {
+  
+  margin-bottom: 0.375rem;
+}
+
+
+
+.form__btns--tablets {
+  @include tablets {
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+.input-error {
+
+  border: 0.19rem solid #E01F3D;
+  
+  
+ 
+
+}

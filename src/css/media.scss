@@ -1,0 +1,26 @@
+@function rem($px) {
+    @return $px / $baseFontSixe + 0rem;
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+       
+    }
+}
+
+@keyframes change_fill {
+    0% { fill: #1bce4f; }
+    35% { fill: #1bceb1; }
+    85% { fill: #49549E; }
+    100% {fill: #000}
+   
+    
+    
+}
